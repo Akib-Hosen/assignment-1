@@ -74,7 +74,7 @@ function getCngFare(distance, isNight = false, waitingMinutes = 0){
 
 
 // Question 5
-function getChaseVerdict(target, scored, ballsLeft){
+const getChaseVerdict = (target, scored, ballsLeft) =>{
     let runsNeeded = target - scored;
 
     if(runsNeeded <= 0){
@@ -96,4 +96,4 @@ function getChaseVerdict(target, scored, ballsLeft){
 
     return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
 
-}
+};
